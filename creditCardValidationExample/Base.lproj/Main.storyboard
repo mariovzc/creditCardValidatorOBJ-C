@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="ECx-nC-pbX"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Credit Card Validator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxH-Cy-PrP">
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pHs-XR-xb0">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="e0F-sI-69e"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cr-gV-k24">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="VNb-Xm-Sfq"/>
+                                    <constraint firstAttribute="width" constant="59" id="vsS-ue-2ZW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="inK-ro-cTp">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="118" id="bXq-hl-KCy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="VALIDATE"/>
+                                <connections>
+                                    <action selector="validateCard" destination="BYZ-38-t0r" eventType="touchUpInside" id="kpR-7S-gyZ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W6b-E1-mzr">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="Qux-wM-bFe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7Cr-gV-k24" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="2Z4-1Y-Ppd"/>
+                            <constraint firstAttribute="trailing" secondItem="ECx-nC-pbX" secondAttribute="trailing" id="42M-zo-9ij"/>
+                            <constraint firstItem="IxH-Cy-PrP" firstAttribute="leading" secondItem="pHs-XR-xb0" secondAttribute="leading" id="4av-WJ-JZr"/>
+                            <constraint firstItem="ECx-nC-pbX" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="6Kc-6v-Jjw"/>
+                            <constraint firstItem="W6b-E1-mzr" firstAttribute="leading" secondItem="7Cr-gV-k24" secondAttribute="trailing" constant="8" symbolic="YES" id="8eC-hX-Kyh"/>
+                            <constraint firstItem="IxH-Cy-PrP" firstAttribute="trailing" secondItem="pHs-XR-xb0" secondAttribute="trailing" id="9WE-oJ-ZCN"/>
+                            <constraint firstItem="W6b-E1-mzr" firstAttribute="top" secondItem="pHs-XR-xb0" secondAttribute="bottom" constant="7" id="IPZ-Vb-a1r"/>
+                            <constraint firstItem="7Cr-gV-k24" firstAttribute="top" secondItem="pHs-XR-xb0" secondAttribute="bottom" constant="8" symbolic="YES" id="Jwz-uv-jjR"/>
+                            <constraint firstItem="ECx-nC-pbX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="KQ4-LU-BxC"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7Cr-gV-k24" secondAttribute="bottom" constant="521" id="TFW-ib-RJm"/>
+                            <constraint firstItem="ECx-nC-pbX" firstAttribute="centerX" secondItem="inK-ro-cTp" secondAttribute="centerX" id="VA9-2H-iU9"/>
+                            <constraint firstItem="pHs-XR-xb0" firstAttribute="top" secondItem="IxH-Cy-PrP" secondAttribute="bottom" id="X5W-YQ-O9Q"/>
+                            <constraint firstItem="pHs-XR-xb0" firstAttribute="centerX" secondItem="inK-ro-cTp" secondAttribute="centerX" id="ZS2-47-3XX"/>
+                            <constraint firstItem="IxH-Cy-PrP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="lBn-NO-4U8"/>
+                            <constraint firstItem="ECx-nC-pbX" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="o32-rq-Ys1"/>
+                            <constraint firstItem="IxH-Cy-PrP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="opo-6v-6ky"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="inK-ro-cTp" secondAttribute="bottom" constant="321" id="sev-bx-R5z"/>
+                            <constraint firstItem="pHs-XR-xb0" firstAttribute="trailing" secondItem="W6b-E1-mzr" secondAttribute="trailing" id="zyc-vg-tiV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cardNumberTextField" destination="pHs-XR-xb0" id="0fj-y0-bGS"/>
+                        <outlet property="cardTypeLabel" destination="W6b-E1-mzr" id="wxb-aw-2bw"/>
+                        <outlet property="validateCardButton" destination="inK-ro-cTp" id="daj-8P-sXd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="207.19999999999999" y="129.98500749625188"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="1024" height="768"/>
+    </resources>
+</document>
