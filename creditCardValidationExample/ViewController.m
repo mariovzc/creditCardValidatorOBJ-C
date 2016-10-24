@@ -44,6 +44,7 @@
         }
         else {
             [self callAlert:@"INVALID CARD"];
+            [self setTextStyle:[UIColor redColor] borderWidth:2.0f];
         }
         
     }else{
